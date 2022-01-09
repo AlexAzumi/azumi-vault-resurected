@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "yarn build && yarn postbuild",
-    "postbuild": "next-on-netlify"
+    "deploy": "yarn build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
@@ -16,11 +15,11 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@n8tb1t/use-scroll-position": "^1.0.43",
+    "@netlify/plugin-nextjs": "^4.1.1",
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "next": "12",
-    "next-on-netlify": "^2.3.0",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.1",
