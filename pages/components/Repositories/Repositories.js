@@ -44,17 +44,19 @@ const Repositories = () => {
         // Calculate pagination
         let pagesArray = [];
         const total = response.data.length / 6;
-        let pages = Math.round(total);
-        if (total % 1 !== 0) {
-          pages++;
-        }
+
+        const pages = Math.ceil(total);
+
         // Add to pages array
         for (let index = 0; index < pages; index++) {
           pagesArray.push(index);
         }
+
         // Update local state
         setPaginationPages(pagesArray);
         setRepos(response.data);
+
+        console.log(total, pages, pagesArray);
       } catch (error) {
         console.error(error);
       }
