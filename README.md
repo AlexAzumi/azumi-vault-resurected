@@ -1,6 +1,6 @@
-# Azumi's vault | Portafolio de Alejandro Suárez
+# Azumi's vault RESURRECTED | Portafolio de Alejandro Suárez
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eaf1007b-cb2f-4151-9922-e1560ff75126/deploy-status)](https://app.netlify.com/sites/azumi-vault/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08aeba77-f0fc-4b0a-88c2-c3801a418eda/deploy-status)](https://app.netlify.com/sites/azumi-vault/deploys)
 [![CodeFactor](https://www.codefactor.io/repository/github/alexazumi/azumi-vault/badge)](https://www.codefactor.io/repository/github/alexazumi/azumi-vault-resurrected)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/AlexAzumi/azumi-vault-resurected)
 
