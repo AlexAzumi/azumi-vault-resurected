@@ -15,7 +15,8 @@ import { email, github } from '../../../data/contact';
 const Contact = () => {
   return (
     <ScrollAnimation animateIn='fade-in-left' animateOnce={true} offset={50}>
-      <div id='contact' className='mb-5'>
+      <div className='contact mb-5'>
+        <div id='contact' className='fake-header' />
         <h2 className='text-center text-primary mb-4 title'>Contacto</h2>
         <Row>
           <Col className='email-container mb-3 mb-lg-0' lg={6}>

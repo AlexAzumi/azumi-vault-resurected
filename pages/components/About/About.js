@@ -15,7 +15,8 @@ const About = () => {
       animateOnce={true}
       animatePreScroll={false}
     >
-      <div id='about' className='mb-5'>
+      <div className='mb-5'>
+        <div id='about' className='fake-header' />
         <h2 className='text-center text-primary mb-4 title'>Sobre mí</h2>
         <Row>
           {/* Picture */}

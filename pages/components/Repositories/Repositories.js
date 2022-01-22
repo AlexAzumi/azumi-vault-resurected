@@ -67,7 +67,8 @@ const Repositories = () => {
 
   return (
     <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
-      <div id='repositories' className='mb-5'>
+      <div className='mb-5'>
+        <div id='repositories' className='fake-header' />
         <h2 className='text-center text-primary mb-4 title'>Repositorios</h2>
         <Row>
           {repos.length ? (

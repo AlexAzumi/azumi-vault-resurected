@@ -11,7 +11,8 @@ import projects from '../../../data/projects';
 const Projects = () => {
   return (
     <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
-      <div id='projects' className='pb-5'>
+      <div className='pb-5'>
+        <div id='projects' className='fake-header' />
         <h2 className='text-center text-primary mb-4 title'>Proyectos</h2>
         {/* Projects */}
         <Row>
