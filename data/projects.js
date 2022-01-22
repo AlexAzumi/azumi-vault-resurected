@@ -12,11 +12,4 @@ export default [
     imageURL: '/images/projects/healthycatching.jpg',
     url: 'https://healthycatching.netlify.app/',
   },
-  {
-    title: 'Amole - Tecnología y diseño',
-    description:
-      'Landing page para el startup de tecnología, diseño y marketing. Amole Tech',
-    imageURL: '/images/projects/amole.jpg',
-    url: 'https://amoletech.com/',
-  },
 ];
