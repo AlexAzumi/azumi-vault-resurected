@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC, MouseEventHandler } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Icons
+
 import {
   faHome,
   faEnvelope,
@@ -11,10 +11,7 @@ import {
   faAddressCard,
 } from '@fortawesome/free-solid-svg-icons';
 
-/**
- * Navbar component
- */
-const CustomNavbar = () => {
+const CustomNavbar: FC = () => {
   // State
   const [isSticky, setIsSticky] = React.useState(false);
   const [collapsed, setCollapsed] = React.useState(true);
@@ -24,7 +21,7 @@ const CustomNavbar = () => {
    * @param event - onClick event
    * @param id - Element ID
    */
-  const goToElement = (event: MouseEvent, id: string) => {
+  const goToElement = (event: React.MouseEvent, id: string) => {
     // Prevent default
     event.preventDefault();
     // Get element
@@ -71,7 +68,9 @@ const CustomNavbar = () => {
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-0 text-center mb-2 mb-md-0'
             href='#home'
-            onClick={event => goToElement(event, 'home')}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
+              goToElement(event, 'home')
+            }
           >
             <FontAwesomeIcon className='mr-2' icon={faHome} />
             Inicio
@@ -79,7 +78,9 @@ const CustomNavbar = () => {
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-1 text-center mb-2 mb-md-0'
             href='#about'
-            onClick={event => goToElement(event, 'about')}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
+              goToElement(event, 'about')
+            }
           >
             <FontAwesomeIcon className='mr-2' icon={faAddressCard} />
             Sobre mí
@@ -87,7 +88,9 @@ const CustomNavbar = () => {
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'
             href='#projects'
-            onClick={event => goToElement(event, 'projects')}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
+              goToElement(event, 'projects')
+            }
           >
             <FontAwesomeIcon className='mr-2' icon={faProjectDiagram} />
             Proyectos
@@ -95,7 +98,9 @@ const CustomNavbar = () => {
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-3 text-center mb-2 mb-md-0'
             href='#repositories'
-            onClick={event => goToElement(event, 'repositories')}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
+              goToElement(event, 'repositories')
+            }
           >
             <FontAwesomeIcon className='mr-2' icon={faCodeBranch} />
             Repositorios
@@ -103,7 +108,9 @@ const CustomNavbar = () => {
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-4 text-center mb-2 mb-md-0'
             href='#contact'
-            onClick={event => goToElement(event, 'contact')}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
+              goToElement(event, 'contact')
+            }
           >
             <FontAwesomeIcon className='mr-2' icon={faEnvelope} />
             Contacto

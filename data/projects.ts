@@ -1,4 +1,6 @@
-export default [
+import { Project } from '../pages/api/project';
+
+const PROJECTS = [
   {
     title: 'Medal of Darkness',
     description:
@@ -19,4 +21,6 @@ export default [
     imageURL: '/images/projects/az-player.jpg',
     url: 'https://az-player.netlify.app/',
   },
-];
+] as Project[];
+
+export default PROJECTS.reverse();
