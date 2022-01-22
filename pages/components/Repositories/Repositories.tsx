@@ -3,9 +3,12 @@ import axios from 'axios';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col, Pagination } from 'react-bootstrap';
 
-import { API_URL, REPOSITORIES_PER_PAGE } from '../../constants/app.constants';
+import {
+  API_URL,
+  REPOSITORIES_PER_PAGE,
+} from '../../../lib/constants/app.constants';
 
-import { Repository } from '../../interfaces/repository';
+import { Repository } from '../../../lib/interfaces/repository';
 
 const Repositories: FC = () => {
   // State

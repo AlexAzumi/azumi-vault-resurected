@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { NextApiResponse } from 'next';
 
-import { Repository } from '../interfaces/repository';
+import { Repository } from '../../lib/interfaces/repository';
 
-import { REPOSITORIES_URL } from '../constants/app.constants';
+import { REPOSITORIES_URL } from '../../lib/constants/app.constants';
 
 /**
  * Returns repositories
