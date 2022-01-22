@@ -19,12 +19,7 @@ const Projects: FC = () => {
           <Row>
             {projects.map((item, index) => {
               return (
-                <Col
-                  key={`project-${index}`}
-                  lg={6}
-                  className='mb-3'
-                  onClick={() => setShowModal(true)}
-                >
+                <Col key={`project-${index}`} lg={6} className='mb-3'>
                   <div className='custom-card rounded p-2 p-lg-3'>
                     {/* Title */}
                     <p className='title text-center text-info mb-2'>
