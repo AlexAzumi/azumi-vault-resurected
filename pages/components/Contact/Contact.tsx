@@ -1,18 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Icons
+
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// Data
+
 import { email, github } from '../../../data/contact';
 
-/**
- * Component
- * @param {object} props - Component props
- */
-const Contact = () => {
+const Contact: FC = () => {
   return (
     <ScrollAnimation animateIn='fade-in-left' animateOnce={true} offset={50}>
       <div className='contact mb-5'>

@@ -21,10 +21,10 @@ const CustomNavbar = () => {
 
   /**
    * Go to element with smooth animation
-   * @param {Event} event - onClick event
-   * @param {string} id - Element ID
+   * @param event - onClick event
+   * @param id - Element ID
    */
-  const goToElement = (event, id) => {
+  const goToElement = (event: MouseEvent, id: string) => {
     // Prevent default
     event.preventDefault();
     // Get element

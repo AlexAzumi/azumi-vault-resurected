@@ -1,22 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import axios from 'axios';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col, Pagination } from 'react-bootstrap';
-// API URL
-const API_URL = '/api/repositories';
-// Pagination properties
-const paginationProperties = {
-  max: 6,
-};
 
-/**
- * Repositories component
- * @param {object} props - Component props
- */
-const Repositories = () => {
+import { API_URL, REPOSITORIES_PER_PAGE } from '../../constants/app.constants';
+
+import { Repository } from '../../interfaces/repository';
+
+const Repositories: FC = () => {
   // State
-  const [repos, setRepos] = React.useState([]);
-  const [paginationPages, setPaginationPages] = React.useState([]);
+  const [repos, setRepos] = React.useState<Repository[]>([]);
+  const [paginationPages, setPaginationPages] = React.useState<number[]>([]);
   const [paginationSettings, setPaginationSettings] = React.useState({
     selectedPage: 1,
     start: 0,
@@ -25,10 +19,10 @@ const Repositories = () => {
 
   /**
    * Changes the active pagination page
-   * @param {number} selectedPage - Number of the selected page
+   * @param selectedPage - Number of the selected page
    */
-  const handleChangePagination = selectedPage => {
-    const start = (selectedPage - 1) * paginationProperties.max;
+  const handleChangePagination = (selectedPage: number) => {
+    const start = (selectedPage - 1) * REPOSITORIES_PER_PAGE;
     const end = start + 6;
     // Update pagination settings
     setPaginationSettings({ selectedPage, start, end });

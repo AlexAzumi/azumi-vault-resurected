@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'react-bootstrap';
 // Data
@@ -6,9 +6,8 @@ import data from '../../../data/about';
 
 /**
  * About component
- * @param {object} props - Component props
  */
-const About = () => {
+const About: FC = () => {
   return (
     <ScrollAnimation
       animateIn='fade-in-left'

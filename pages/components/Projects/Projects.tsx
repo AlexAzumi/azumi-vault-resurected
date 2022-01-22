@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'react-bootstrap';
-// Data
+
 import projects from '../../../data/projects';
 
-/**
- * Projects component
- * @param {object} props - Component props
- */
-const Projects = () => {
+const Projects: FC = () => {
   return (
     <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
       <div className='pb-5'>

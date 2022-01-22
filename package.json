@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@n8tb1t/use-scroll-position": "^1.0.43",
     "@netlify/plugin-nextjs": "^4.1.1",
+    "@types/react-animate-on-scroll": "^2.1.5",
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",

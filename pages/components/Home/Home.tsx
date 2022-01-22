@@ -1,11 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-/**
- * Home component
- * @param {object} props - Component props
- */
-const Home = () => {
+const Home: FC = () => {
   return (
     <ScrollAnimation
       animateIn='animate__fadeInDown'

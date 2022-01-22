@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Container } from 'react-bootstrap';
-// Components
+
 import Navbar from './Navbar/Navbar';
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
@@ -11,9 +11,8 @@ import Copyright from '../components/Copyright/Copyright';
 
 /**
  * Main layout component
- * @param {object} props - Component props
  */
-const MainLayout = () => {
+const MainLayout: FC = () => {
   return (
     <>
       {/* Navbar */}

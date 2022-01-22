@@ -1,10 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-/**
- * Copyright component
- * @param {object} props - Component props
- */
-const Copyright = () => {
+const Copyright: FC = () => {
   // Get current year
   const year = new Date().getFullYear();
 
