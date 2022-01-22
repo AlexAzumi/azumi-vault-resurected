@@ -12,4 +12,11 @@ export default [
     imageURL: '/images/projects/healthycatching.jpg',
     url: 'https://healthycatching.netlify.app/',
   },
+  {
+    title: 'az! player',
+    description:
+      'Reproductor de música para todas tus canciones del juego rítmico llamado osu!',
+    imageURL: '/images/projects/az-player.jpg',
+    url: 'https://az-player.netlify.app/',
+  },
 ];
