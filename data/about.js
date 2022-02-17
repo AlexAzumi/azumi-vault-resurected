@@ -1,7 +1,7 @@
 export default {
   technologies: [
     'JavaScript',
-    'TypeScrypt',
+    'TypeScript',
     'Git',
     'CSS',
     'React',
@@ -9,5 +9,6 @@ export default {
     'Node.js',
     'Unity 3D',
     'PostgreSQL',
+    'MySQL',
   ],
 };
