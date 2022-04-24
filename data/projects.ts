@@ -6,7 +6,7 @@ const PROJECTS = [
     description:
       'Videojuego para la ayuda de la compresión lectora y razonamiento lógico del jugador',
     imageURL: '/images/projects/medalofdarkness.jpg',
-    url: 'http://aldanproject.x10.mx/',
+    url: null,
   },
   {
     title: 'Healthy Catching',
