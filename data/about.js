@@ -1,7 +1,6 @@
 export default {
   technologies: [
     'JavaScript',
-    'TypeScript',
     'Git',
     'CSS',
     'React',
