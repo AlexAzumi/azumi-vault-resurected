@@ -259,6 +259,18 @@ body {
   }
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 @media (max-width: 992px) {
   .contact {
     .email-container {

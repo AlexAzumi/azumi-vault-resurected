@@ -23,4 +23,9 @@ export interface Repository {
    * Whether the repository is forked or not
    */
   fork: boolean;
+
+  /**
+   * Date of the last update of the repository
+   */
+  updated_at: string;
 }
