@@ -1,4 +1,4 @@
-# Azumi's vault RESURRECTED | Portafolio de Alejandro Suárez
+# Azumi's Vault | Portafolio de Alejandro Suárez
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/08aeba77-f0fc-4b0a-88c2-c3801a418eda/deploy-status)](https://app.netlify.com/sites/azumi-vault/deploys)
 [![CodeFactor](https://www.codefactor.io/repository/github/alexazumi/azumi-vault/badge)](https://www.codefactor.io/repository/github/alexazumi/azumi-vault-resurrected)
@@ -10,7 +10,7 @@ Portafolio de proyectos web de mis **proyectos personales** importantes.
 
 Para correr el proyecto de manera local necesitas seguir un par de pasos sencillos, pero para ello se necesita:
 
-- Git (Con Git Bash u otra terminal)
+- Git
 - npm 6.4.1 o mejor
 
 Primero se necesita clonar el repositorio con el siguiente comando:
