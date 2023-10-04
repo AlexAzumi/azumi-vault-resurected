@@ -20,7 +20,11 @@ const About: FC = () => {
         <Row>
           {/* Picture */}
           <Col className='mb-3 mb-md-0' md={4}>
-            <img className='img-fluid rounded' src='/images/profile.jpg' />
+            <img
+              className='img-fluid rounded'
+              src='/images/profile.webp'
+              alt='Foto de Alejandro Suárez'
+            />
           </Col>
           {/* Information */}
           <Col md={8}>
