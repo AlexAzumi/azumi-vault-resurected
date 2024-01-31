@@ -9,6 +9,5 @@ export default {
     'Unity',
     'PostgreSQL',
     'MySQL',
-    'Rust',
   ],
 };
