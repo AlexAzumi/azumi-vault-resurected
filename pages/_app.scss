@@ -140,7 +140,10 @@ body {
   }
 
   .description {
-    height: 40px;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: center;
   }
 
   .url {
@@ -169,6 +172,13 @@ body {
 
   .link:hover {
     color: #17a2b8;
+  }
+
+  .repository-stars {
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 8px;
   }
 }
 

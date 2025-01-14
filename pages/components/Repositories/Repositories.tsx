@@ -2,6 +2,8 @@ import React, { FC } from 'react';
 import axios from 'axios';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col, Pagination } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 import {
   API_URL,
@@ -71,14 +73,14 @@ const Repositories: FC = () => {
           {repos.length ? (
             repos
               .filter(
-                (item, index) =>
+                (_, index) =>
                   index >= paginationSettings.start &&
                   index < paginationSettings.end
               )
               .map((item, index) => {
                 return (
                   <Col className='pb-2' lg={6} key={`repository-${index}`}>
-                    <div className='custom-card repository rounded'>
+                    <div className='custom-card repository rounded position-relative'>
                       <p className='name text-primary mb-0'>{item.name}</p>
                       <p className='text-muted mb-0'>{item.full_name}</p>
                       <a
@@ -90,6 +92,13 @@ const Repositories: FC = () => {
                         {item.html_url}
                       </a>
                       <p className='mb-0'>{item.description}</p>
+                      {/* Show stars */}
+                      {item.stargazers_count > 0 ? (
+                        <div className='repository-stars'>
+                          <FontAwesomeIcon icon={faStar} />{' '}
+                          {item.stargazers_count}
+                        </div>
+                      ) : null}
                     </div>
                   </Col>
                 );

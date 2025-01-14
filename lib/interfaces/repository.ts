@@ -28,4 +28,9 @@ export interface Repository {
    * Date of the last update of the repository
    */
   updated_at: string;
+
+  /**
+   * Number of stars of the repository
+   */
+  stargazers_count: number;
 }

@@ -5,13 +5,13 @@ const PROJECTS = [
     title: 'Medal of Darkness',
     description:
       'Videojuego para la ayuda de la compresión lectora y razonamiento lógico del jugador',
-    imageURL: '/images/projects/medalofdarkness.webp',
+    imageURL: '/images/projects/medal-of-darkness.webp',
     url: null,
   },
   {
     title: 'Healthy Catching',
     description: 'Juego educativo para dispositivos Android',
-    imageURL: '/images/projects/healthycatching.webp',
+    imageURL: '/images/projects/healthy-catching.webp',
     url: 'https://healthycatching.netlify.app/',
   },
   {
