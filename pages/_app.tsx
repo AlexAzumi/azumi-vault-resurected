@@ -19,6 +19,11 @@ const App: FC = () => {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         {/* Manifest */}
         <link rel='manifest' href='/manifest.json' />
+
+        <link
+          href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap'
+          rel='stylesheet'
+        ></link>
       </Head>
       <MainLayout />
     </>
