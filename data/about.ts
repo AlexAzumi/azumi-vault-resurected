@@ -1,13 +1,13 @@
 export default {
   technologies: [
     'JavaScript/TypeScript',
+    'React.js/React Native',
+    'CSS/SCSS',
     'Git',
-    'CSS',
-    'React',
-    'React Native',
     'Node.js',
-    'Unity',
+    'Unity Engine',
     'PostgreSQL',
     'MySQL',
+    'Tauri',
   ],
 };

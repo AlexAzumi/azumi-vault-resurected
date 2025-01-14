@@ -2,26 +2,27 @@
  * Main page component
  */
 
-/* Fonts */
-
+// Imports
 @import 'rfs/scss.scss';
 @import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css';
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-/* Colors */
-
+// Colors
 $navbar-background: #212529;
 $navbar-link: #ffffff80;
 $primary: #03a9f4;
 $white: #ffffff;
 
-/* Fonts */
-$general-font: 'Open Sans', sans-serif;
-$navbar-font: 'Ubuntu', sans-serif;
+// Variables
+$general-font: 'Inconsolata', sans-serif;
+$navbar-font: 'Inconsolata', sans-serif;
+$initial-delay: 3500ms;
+$delay-multiplier: 800ms;
+$fade-up-time: 1200ms;
 
-/* Styles */
-
+// Styles
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $general-font;
 }
 
 body {
@@ -77,35 +78,10 @@ body {
       color: $white !important;
     }
 
-    &.fade-top-0 {
-      -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-        200ms both;
-      animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 200ms both;
-    }
-
-    &.fade-top-1 {
-      -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-        400ms both;
-      animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 400ms both;
-    }
-
-    &.fade-top-2 {
-      -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-        600ms both;
-      animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 600ms both;
-    }
-
-    &.fade-top-3 {
-      -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-        800ms both;
-      animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 800ms both;
-    }
-
-    &.fade-top-4 {
-      -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
-        1000ms both;
-      animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms
-        both;
+    &.fade-bottom {
+      -webkit-animation: fade-in-bottom $fade-up-time cubic-bezier(0.39, 0.575, 0.565, 1)
+        ($initial-delay + ($delay-multiplier * 1)) both;
+      animation: fade-in-bottom $fade-up-time cubic-bezier(0.39, 0.575, 0.565, 1) ($initial-delay + ($delay-multiplier * 1)) both;
     }
   }
 }
@@ -118,11 +94,29 @@ body {
  * Home component styles
  */
 .home {
-  @include margin-bottom(12rem);
+  @include margin-bottom(8rem);
   @include margin-top(12rem);
 
   .name-title {
     @include font-size(6rem);
+  }
+
+  .title-text-fade-in {
+    -webkit-animation: fade-in-bottom $fade-up-time cubic-bezier(0.39, 0.575, 0.565, 1) $initial-delay both;
+      animation: fade-in-bottom $fade-up-time cubic-bezier(0.39, 0.575, 0.565, 1) $initial-delay both;
+  }
+
+  .scroll-for-more {
+    @include margin-top(6rem);
+
+
+    animation: float 3s ease-in-out infinite;
+    opacity: 0;
+    transition: all 250ms;
+
+    &.show {
+      opacity: 1;
+    }
   }
 }
 
@@ -138,10 +132,10 @@ body {
  */
 .custom-card {
   background-color: $navbar-background;
-  font-weight: 200;
+  font-weight: 300;
 
   .title {
-    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     font-size: 1.6em;
   }
 
@@ -152,6 +146,8 @@ body {
   .url {
     display: block;
     text-align: center;
+    text-decoration: none;
+    font-weight: 300;
   }
 }
 
@@ -283,10 +279,10 @@ body {
 }
 
 /* Animations */
-@keyframes fade-in-top {
+@keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -306,5 +302,17 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

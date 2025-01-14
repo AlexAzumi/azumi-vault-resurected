@@ -17,11 +17,6 @@ const App: FC = () => {
       <Head>
         <title>Alejandro Suárez | Portafolio personal</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        {/* Fonts */}
-        <link
-          href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Ubuntu:wght@500&display=swap'
-          rel='stylesheet'
-        />
         {/* Manifest */}
         <link rel='manifest' href='/manifest.json' />
       </Head>

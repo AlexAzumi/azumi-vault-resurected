@@ -1,4 +1,4 @@
-import React, { FC, MouseEventHandler } from 'react';
+import React, { FC, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -66,7 +66,7 @@ const CustomNavbar: FC = () => {
       <Navbar.Collapse>
         <Nav className='ml-auto'>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-0 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-bottom text-center mb-2 mb-md-0'
             href='#home'
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
               goToElement(event, 'home')
@@ -76,7 +76,7 @@ const CustomNavbar: FC = () => {
             Inicio
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-1 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-bottom text-center mb-2 mb-md-0'
             href='#about'
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
               goToElement(event, 'about')
@@ -86,7 +86,7 @@ const CustomNavbar: FC = () => {
             Sobre mí
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-bottom text-center mb-2 mb-md-0'
             href='#projects'
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
               goToElement(event, 'projects')
@@ -96,7 +96,7 @@ const CustomNavbar: FC = () => {
             Proyectos
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-3 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-bottom text-center mb-2 mb-md-0'
             href='#repositories'
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
               goToElement(event, 'repositories')
@@ -106,7 +106,7 @@ const CustomNavbar: FC = () => {
             Repositorios
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-4 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-bottom text-center mb-2 mb-md-0'
             href='#contact'
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
               goToElement(event, 'contact')

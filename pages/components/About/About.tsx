@@ -29,8 +29,8 @@ const About: FC = () => {
           {/* Information */}
           <Col md={8}>
             <p className='text-justify'>
-              ¡Hola!, mi nombre es Alejandro Suárez, soy tecnólogo en desarrollo
-              de software egresado de <b>CETI plantel Tonalá</b>. Actualmente
+              Mi nombre es Alejandro Suárez, soy tecnólogo en desarrollo de
+              software egresado de <b>CETI plantel Tonalá</b>. Actualmente
               estudio Ingeniería en Computación en el Centro Universitario de
               Ciencias Exactas e Ingenierías (CUCEI) de la{' '}
               <b>Universidad de Guadalajara</b>.
@@ -48,8 +48,10 @@ const About: FC = () => {
             <Row>
               {data.technologies.map((item, index) => {
                 return (
-                  <Col key={`techonoly-${index}`} xs={6}>
-                    <li>{item}</li>
+                  <Col key={`technology-${index}`} xs={6}>
+                    <ul className='mb-1'>
+                      <li>{item}</li>
+                    </ul>
                   </Col>
                 );
               })}

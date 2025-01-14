@@ -16,8 +16,7 @@ const PROJECTS = [
   },
   {
     title: 'az! player',
-    description:
-      'Reproductor de música para todas tus canciones del juego rítmico llamado osu!',
+    description: 'Reproductor de música para todas tus canciones de osu!',
     imageURL: '/images/projects/az-player.webp',
     url: 'https://az-player.netlify.app/',
   },

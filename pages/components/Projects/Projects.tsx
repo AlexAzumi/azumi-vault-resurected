@@ -27,11 +27,14 @@ const Projects: FC = () => {
                     </p>
                     <div className='position-relative'>
                       {/* Image */}
-                      <img className='img-fluid mb-1' src={item.imageURL} />
+                      <img
+                        className='img-fluid rounded mb-2'
+                        src={item.imageURL}
+                      />
                       {/* Link */}
                       {item.url ? (
                         <a
-                          className='url text-info rounded-pill px-lg-3 py-lg-1'
+                          className='url text-info rounded-pill px-lg-3 py-lg-1 mb-1'
                           href={item.url}
                         >
                           {item.url}
