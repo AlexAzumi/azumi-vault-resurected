@@ -81,6 +81,11 @@ body {
       -webkit-animation: fade-in-bottom $fade-up-time cubic-bezier(0.39, 0.575, 0.565, 1)
         ($initial-delay + ($delay-multiplier * 1)) both;
       animation: fade-in-bottom $fade-up-time cubic-bezier(0.39, 0.575, 0.565, 1) ($initial-delay + ($delay-multiplier * 1)) both;
+
+      @media (max-width: 768px) {
+        animation-delay: 0ms;
+        -webkit-animation-delay: 0ms;
+      }
     }
   }
 }
