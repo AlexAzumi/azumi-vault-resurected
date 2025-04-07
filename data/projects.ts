@@ -27,6 +27,11 @@ const PROJECTS = [
     imageURL: '/images/projects/webp-converter.webp',
     url: 'https://github.com/AlexAzumi/webp-converter',
   },
+  {
+    title: 'X-Ray Explorer VR',
+    description: 'Aplicación de realidad virtual enfocada en el aprendizaje del esqueleto humano como su composición y estructura',
+    imageURL: '/images/projects/x-ray-explorer-vr.webp'
+  }
 ] as Project[];
 
 export default PROJECTS.reverse();

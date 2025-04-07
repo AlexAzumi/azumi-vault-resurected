@@ -1,14 +1,10 @@
-import React, { FC, useState } from 'react';
+import { FC } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Row, Col } from 'react-bootstrap';
-
-import ProjectModal from './components/ProjectModal';
+import { Col, Row } from 'react-bootstrap';
 
 import projects from '../../../data/projects';
 
 const Projects: FC = () => {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <>
       <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
@@ -52,8 +48,6 @@ const Projects: FC = () => {
           </Row>
         </div>
       </ScrollAnimation>
-
-      <ProjectModal show={showModal} handleClose={() => setShowModal(false)} />
     </>
   );
 };
